@@ -12,6 +12,7 @@
         <module>chapter-01</module>
         <module>chapter-02</module>
         <module>chapter-03</module>
+        <module>chapter-04</module>
     </modules>
 
     <properties>
@@ -93,6 +94,16 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
+                <version>${version.springframework}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${version.springframework}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
                 <version>${version.springframework}</version>
             </dependency>
             <dependency>
