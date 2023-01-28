@@ -13,6 +13,9 @@
         <module>chapter-02</module>
         <module>chapter-03</module>
         <module>chapter-04</module>
+        <module>chapter-05</module>
+        <module>chapter-06</module>
+        <module>chapter-07</module>
     </modules>
 
     <properties>
@@ -26,6 +29,7 @@
         <version.pdf>1.8.10</version.pdf>
         <version.junit>4.13.2</version.junit>
         <version.commons-logging>1.2</version.commons-logging>
+        <version.hibernate-validator>6.2.5.Final</version.hibernate-validator>
 
         <!--maven plugin-->
         <version.maven-war-plugin>3.3.2</version.maven-war-plugin>
@@ -36,11 +40,6 @@
     </properties>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${version.springframework}</version>
-            </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -125,6 +124,16 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${version.springframework}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${version.hibernate-validator}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator-annotation-processor</artifactId>
+                <version>${version.hibernate-validator}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
