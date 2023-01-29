@@ -16,20 +16,22 @@
         <module>chapter-05</module>
         <module>chapter-06</module>
         <module>chapter-07</module>
+        <module>chapter-09</module>
+        <module>chapter-10</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <version.springframework>5.3.25</version.springframework>
         <version.javax.servlet-api>4.0.1</version.javax.servlet-api>
         <version.jstl>1.2</version.jstl>
-        <version.pdf>1.8.10</version.pdf>
+        <version.springframework>5.3.25</version.springframework>
         <version.junit>4.13.2</version.junit>
         <version.commons-logging>1.2</version.commons-logging>
         <version.hibernate-validator>6.2.5.Final</version.hibernate-validator>
+        <version.jakarta.validation-api>3.0.2</version.jakarta.validation-api>
+        <version.pdf>1.8.10</version.pdf>
 
         <!--maven plugin-->
         <version.maven-war-plugin>3.3.2</version.maven-war-plugin>
@@ -134,6 +136,11 @@
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator-annotation-processor</artifactId>
                 <version>${version.hibernate-validator}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${version.jakarta.validation-api}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
