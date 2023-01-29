@@ -1,8 +1,8 @@
 package org.sansovo.demo.springmvc.chapter07.controller;
 
-import org.sansovo.demo.springmvc.chapter07.domain.Product;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.sansovo.demo.springmvc.chapter07.domain.Product;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

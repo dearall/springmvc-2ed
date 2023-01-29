@@ -1,6 +1,5 @@
 package org.sansovo.demo.springmvc.chapter10.controller;
 
-import jakarta.validation.Valid;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.sansovo.demo.springmvc.chapter10.domain.Product;
@@ -11,6 +10,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 public class ProductController {
