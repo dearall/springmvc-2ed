@@ -18,6 +18,10 @@
         <module>chapter-07</module>
         <module>chapter-09</module>
         <module>chapter-10</module>
+        <module>chapter-11</module>
+        <module>chapter-12</module>
+        <module>chapter-13</module>
+        <module>appendix-c</module>
     </modules>
 
     <properties>
@@ -29,9 +33,12 @@
         <version.springframework>5.3.25</version.springframework>
         <version.junit>4.13.2</version.junit>
         <version.commons-logging>1.2</version.commons-logging>
+        <version.commons-io>2.11.0</version.commons-io>
+        <version.commons-fileupload>1.4</version.commons-fileupload>
         <version.hibernate-validator>6.2.5.Final</version.hibernate-validator>
         <version.validation-api>2.0.1.Final</version.validation-api>
         <version.pdf>1.8.10</version.pdf>
+        <version.mockito>5.1.0</version.mockito>
 
         <!--maven plugin-->
         <version.maven-war-plugin>3.3.2</version.maven-war-plugin>
@@ -79,6 +86,16 @@
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
                 <version>${version.commons-logging}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${version.commons-io}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${version.commons-fileupload}</version>
             </dependency>
 
             <!-- Spring dependencies start: -->
@@ -142,7 +159,12 @@
                 <artifactId>hibernate-validator-annotation-processor</artifactId>
                 <version>${version.hibernate-validator}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${version.mockito}</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
