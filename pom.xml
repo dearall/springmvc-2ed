@@ -22,6 +22,8 @@
         <module>chapter-12</module>
         <module>chapter-13</module>
         <module>appendix-c</module>
+        <module>appendix-d</module>
+        <module>appendix-e</module>
     </modules>
 
     <properties>

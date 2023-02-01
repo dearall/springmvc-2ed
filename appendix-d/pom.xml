@@ -9,12 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>appendix-c</artifactId>
+    <artifactId>appendix-d</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>c1</module>
-        <module>c2</module>
-        <module>c3</module>
+        <module>d1</module>
     </modules>
 
     <properties>
@@ -28,5 +26,4 @@
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
     </dependencies>
-
 </project>
